@@ -18,9 +18,10 @@ After the boat position is calculated, a path between the boat and the final doc
 
 ![control5](https://user-images.githubusercontent.com/82735863/223553707-96a710a9-4095-4688-8e9e-652623532f09.png)
 Figure 3. Control system simulation
+
 Figure 3 also demonstrates a simulation of the boat motion with a proportional control scheme applied. The control system is a slightly modified proportional control system, which takes the position error between the generated path and a position directly in front of the boat, as shown in Figure 4. This error is multiplied by a constant K and then set as the rudder angle for the boat to follow next. This instruction set is then sent to the arduino electrics control unit. To assist in the development of the control scheme prior to the construction of the boat, a simulation based on the riverboat dynamics model described by Aleksander GRM[2] was developed in python. This simulation assists in demonstrating the capabilities of different methods and algorithms, and can aid in tuning the different constants necessary for the proper function of the control system. This is demonstrated as the “simulated boat path” line in figures 3 and 4.	
 
-![YwOArMkb_4x](https://user-images.githubusercontent.com/82735863/223553774-0536e6dc-c141-4aee-9526-8aed4213e418.jpg)
+![YwOArMkb_42](https://user-images.githubusercontent.com/82735863/223554486-28113cdc-4790-4713-a0f2-059a7d305b19.jpg)
 Figure 4. Control system error
 
 
